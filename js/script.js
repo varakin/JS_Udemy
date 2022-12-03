@@ -154,18 +154,30 @@ function fifthTask() {
 
 // console.log(returnNeighboringNumbers(5));
 
-function getMathResult(a, b) {
-    let tax = a;
-    let str = '';
-    if (typeof b === "number" && b>0) {
-        for (let i = 1; i < b; i++) {
-            str = str + tax + '---';
-            tax += a;
+// function getMathResult(a, b) {
+//     let tax = a;
+//     let str = '';
+//     if (typeof b === "number" && b>0) {
+//         for (let i = 1; i < b; i++) {
+//             str = str + tax + '---';
+//             tax += a;
             
-        }
-    } else {
-        return (a);
+//         }
+//     } else {
+//         return (a);
+//     }
+//     return str+tax
+// }
+// console.log(getMathResult(20, -5));
+function calculationVolumeAndArea (perem){
+    stroka = '';
+    if (typeof perem === 'number' && perem > 0 && Number.isInteger(perem)){
+            stroka = 'Объем куба: '+ perem*perem*perem + ', площадь всей поверхности: '+ perem*perem*6;
     }
-    return str+tax
+    else {
+        stroka = 'При вычислении произошла ошибка';
+    }
+    return stroka;
 }
-console.log(getMathResult(20, -5));
+
+console.log(calculationVolumeAndArea(-15))
