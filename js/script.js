@@ -1,4 +1,4 @@
-'use strict';
+//'use strict';
 
 
 /* первая домашка (19 номер урока)
@@ -169,15 +169,28 @@ function fifthTask() {
 //     return str+tax
 // }
 // console.log(getMathResult(20, -5));
-function calculationVolumeAndArea (perem){
-    stroka = '';
-    if (typeof perem === 'number' && perem > 0 && Number.isInteger(perem)){
-            stroka = 'Объем куба: '+ perem*perem*perem + ', площадь всей поверхности: '+ perem*perem*6;
-    }
-    else {
-        stroka = 'При вычислении произошла ошибка';
-    }
-    return stroka;
-}
+// function calculationVolumeAndArea (perem){
+//     stroka = '';
+//     if (typeof perem === 'number' && perem > 0 && Number.isInteger(perem)){
+//             stroka = 'Объем куба: '+ perem*perem*perem + ', площадь всей поверхности: '+ perem*perem*6;
+//     }
+//     else {
+//         stroka = 'При вычислении произошла ошибка';
+//     }
+//     return stroka;
+// }
 
-console.log(calculationVolumeAndArea(-15))
+// console.log(calculationVolumeAndArea(-15))
+function getCoupeNumber(place){
+    qwerty = '';
+    if (typeof place === 'number' && Number.isInteger(place) && place > 0 && place <37){
+        qwerty = Math.ceil(place/4);
+    }
+    else if (place == 0 || place >=37){
+        qwerty = 'Таких мест в вагоне не существует';
+    } else {
+        qwerty = 'Ошибка. Проверьте правильность введенного номера места';
+    }
+    return qwerty;
+}
+console.log(getCoupeNumber('hello'))
