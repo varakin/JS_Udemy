@@ -169,6 +169,7 @@ function fifthTask() {
 //     return str+tax
 // }
 // console.log(getMathResult(20, -5));
+
 // function calculationVolumeAndArea (perem){
 //     stroka = '';
 //     if (typeof perem === 'number' && perem > 0 && Number.isInteger(perem)){
@@ -180,17 +181,26 @@ function fifthTask() {
 //     return stroka;
 // }
 
-// console.log(calculationVolumeAndArea(-15))
-function getCoupeNumber(place){
-    qwerty = '';
-    if (typeof place === 'number' && Number.isInteger(place) && place > 0 && place <37){
-        qwerty = Math.ceil(place/4);
+// // console.log(calculationVolumeAndArea(-15))
+// function getCoupeNumber(place){
+//     qwerty = '';
+//     if (typeof place === 'number' && Number.isInteger(place) && place > 0 && place <37){
+//         qwerty = Math.ceil(place/4);
+//     }
+//     else if (place == 0 || place >=37){
+//         qwerty = 'Таких мест в вагоне не существует';
+//     } else {
+//         qwerty = 'Ошибка. Проверьте правильность введенного номера места';
+//     }
+//     return qwerty;
+// }
+// console.log(getCoupeNumber('hello'))
+
+function getTimeFromMinutes(minutka) {
+    resultTime = '';
+    if (Number.isInteger(minutka) && minutka >=0 && minutka <=600){
+        let hour = parseInt(minutka/60);
     }
-    else if (place == 0 || place >=37){
-        qwerty = 'Таких мест в вагоне не существует';
-    } else {
-        qwerty = 'Ошибка. Проверьте правильность введенного номера места';
-    }
-    return qwerty;
+    return resultTime;
 }
-console.log(getCoupeNumber('hello'))
+console.log(getTimeFromMinute(150));
