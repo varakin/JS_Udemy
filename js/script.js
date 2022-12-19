@@ -203,4 +203,4 @@ function getTimeFromMinutes(minutka) {
     }
     return resultTime;
 }
-console.log(getTimeFromMinute(150));
+console.log(getTimeFromMinute(160));
