@@ -196,11 +196,31 @@ function fifthTask() {
 // }
 // console.log(getCoupeNumber('hello'))
 
-function getTimeFromMinutes(minutka) {
-    resultTime = '';
-    if (Number.isInteger(minutka) && minutka >=0 && minutka <=600){
-        let hour = parseInt(minutka/60);
+// function getTimeFromMinutes(vreme4ko) {
+//     let resultTime = '';
+//     if (Number.isInteger(vreme4ko) && vreme4ko >=0 && vreme4ko <=600){
+//         let hour = parseInt(vreme4ko/60);
+//         let minute = parseInt(vreme4ko%60);
+//         if (hour === 1) {
+//             resultTime = 'Это ' + hour + ' час и ' + minute + ' минут';
+//         } else if ((hour === 2)|| (hour === 3)|| (hour === 4)){
+//             resultTime = 'Это ' + hour + ' часа и ' + minute + ' минут';
+//         } else {
+//             resultTime = 'Это ' + hour + ' часов и ' + minute + ' минут';
+//         }
+//         return resultTime;
+//     }
+//     else {
+//         return 'Ошибка, проверьте данные'
+//     }
+// }
+// console.log(getTimeFromMinutes(0));
+
+function findMaxNumber(x1 = 'a', x2 = 'a', x3 = 'a', x4 = 'a') {
+    if ((typeof x1 === 'string') || (typeof x2 === 'string') || (typeof x3 === 'string') || (typeof x4 === 'string')) {
+        return 0;
+    } else {
+        return Math.max(x1, x2, x3, x4);
     }
-    return resultTime;
 }
-console.log(getTimeFromMinute(160));
+console.log (findMaxNumber(1, 5, '6', '10'));
