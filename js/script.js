@@ -247,4 +247,4 @@ function fib(x) {
         return ""
     }
 }
-console.log(fib(1));
+console.log(fib(7));
