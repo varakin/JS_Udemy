@@ -225,26 +225,26 @@ function fifthTask() {
 // }
 // console.log (findMaxNumber(1, 5, '6', '10'));
 
-function fib(x) {
-    if (x===1) {
-        return "0";
-    }
-    else if (x===2){
-        return "0 1";
-    }
-    else if (Number.isInteger(x) && x>0){
-        let xMinusOne = 1
-        let xMinusTwo = 0;
-        let qwe = '0 1 ';
-        for (let i = 3; i <=x; i++) {
-            let y = xMinusTwo + xMinusOne;
-            qwe += y + ' ';
-            xMinusTwo = xMinusOne;
-            xMinusOne = y;
-        }
-        return qwe.slice(0,-1);
-    } else {
-        return ""
-    }
-}
-console.log(fib(7));
+// function fib(x) {
+//     if (x===1) {
+//         return "0";
+//     }
+//     else if (x===2){
+//         return "0 1";
+//     }
+//     else if (Number.isInteger(x) && x>0){
+//         let xMinusOne = 1
+//         let xMinusTwo = 0;
+//         let qwe = '0 1 ';
+//         for (let i = 3; i <=x; i++) {
+//             let y = xMinusTwo + xMinusOne;
+//             qwe += y + ' ';
+//             xMinusTwo = xMinusOne;
+//             xMinusOne = y;
+//         }
+//         return qwe.slice(0,-1);
+//     } else {
+//         return ""
+//     }
+// }
+// console.log(fib(7));
