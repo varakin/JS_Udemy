@@ -252,3 +252,4 @@ function fifthTask() {
 // тут я дописываю просто некий код для проверки пулла
 
 // тут код от ветки newBranch
+// something from gtHb
