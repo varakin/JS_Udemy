@@ -253,3 +253,4 @@ function fifthTask() {
 
 // тут код от ветки newBranch
 // something from gtHb
+// from local
