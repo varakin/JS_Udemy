@@ -254,3 +254,67 @@ function fifthTask() {
 // тут код от ветки newBranch
 // something from gtHb
 // from local
+
+// const newPost = (post, addedAt = Date()) => {
+//     const qwe = {
+//         ...post,
+//         addedAt,
+//     }
+//     return qwe
+// }
+
+// const firstPost = {
+//     id: 1,
+//     author: 'Ivan',
+// }
+
+// console.log(firstPost)
+// console.log(newPost(firstPost))
+
+// const s = 'jhg123gjhg434hjg54343gg123gjhg3434'
+// const newS = s.split("")
+// newS.push('a')
+// let newArray = [];
+// let qwe = '';
+// newS.forEach(element => {
+//     if (element >= '0' && element <= '9') {
+//         qwe += element
+//     } else {
+//         newArray.push(+qwe);
+//         qwe = '';
+//     }
+// });
+// console.log(Math.max(...newArray))
+
+class Car {
+    constructor(color, wheels, mark) {
+        this.color = color
+        this.wheels = wheels
+        this.mark = mark
+    }
+    get price(){
+        console.log('where is my money?!')
+    }
+    qwe(){
+        console.log('qwe')
+    }
+}
+
+const buldozer = new Car('yellow', 6, 'cat')
+buldozer.price
+console.log(buldozer.color)
+buldozer.qwe()
+buldozer.driver = 'Ivan'
+console.log(buldozer.driver)
+console.log(buldozer)
+buldozer.
+
+
+
+
+
+
+// (reverseWords('apple'), 'elppa', `Input: "apple"`);
+// (reverseWords('a b c d'), 'a b c d', `Input: "a b c d"`);
+// (reverseWords('  double  spaced  words  '), '  elbuod  decaps  sdrow  ', `Input: "  double  spaced  words  "`);
+
