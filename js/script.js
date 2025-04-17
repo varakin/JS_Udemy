@@ -11,7 +11,7 @@ const personalMovieDB = {
     genres: [],
     privat: false
 };
-
+agadsfdfdfsgfsdgfd
 const firstQuestionMovie = prompt('Один из последних просмотренных фильмов?', '');
 const firstQuestionMark = +prompt('На сколько оцените его?', '');
 const secondQuestionMovie = prompt('Один из последних просмотренных фильмов?', '');
